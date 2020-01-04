@@ -1,3 +1,3 @@
-text = "X-DSPAM-Confidence:    0.8475";
-zeroPosition = text.find('0')
-print(float(text[zeroPosition:len(text)]))
+text = "X-DSPAM-Confidence:    0.8475"
+colonPosition = text.find(':')
+print(float(text[colonPosition + 1:].strip()))
